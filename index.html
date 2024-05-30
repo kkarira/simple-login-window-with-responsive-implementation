@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login to Dashboard</h2>
+        <input type="text" id="email-mobile" placeholder="Email or Mobile Number" oninput="validateInput()">
+        <div class="error" id="error-msg"></div>
+        <button id="next-btn" onclick="handleNext()" disabled>Next</button>
+        <p>or</p>
+        <button class="google-btn" onclick="handleGoogleSignIn()">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" alt="Google logo">
+            Sign in with Google
+        </button>
+        <div class="footer">
+            Protected by reCAPTCHA Google<br>
+            <a href="#">Privacy Policy</a> & <a href="#">Terms of Service</a> apply.
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
